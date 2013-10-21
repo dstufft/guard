@@ -15,7 +15,7 @@ import functools
 
 
 __title__ = "guard"
-__version__ = "1.0"
+__version__ = "1.0.1"
 __summary__ = "WSGI Middlewares for Web Application Security"
 __license__ = "Apache License v2.0"
 __uri__ = "https://github.com/dstufft/guard"
