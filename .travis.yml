@@ -1,0 +1,29 @@
+language: python
+python: 3.3
+env:
+    - TOXENV=py26
+    - TOXENV=py27
+    - TOXENV=py32
+    - TOXENV=py33
+    - TOXENV=pypy
+    - TOXENV=pep8
+
+install:
+    - pip install tox coveralls
+
+script:
+    - tox
+
+after_success:
+    - coveralls
+
+branches:
+    only:
+        - master
+
+notifications:
+    irc:
+        channels:
+            - "irc.freenode.org#warehouse"
+        use_notice: true
+        skip_join: true
