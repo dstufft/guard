@@ -32,4 +32,4 @@ Usage
     app = guard.ContentSecurityPolicy(wsgi_app.application, {"img-src": ["*"]})
 
     # Report Only
-    app = guard.ContentSecurityPolicy(wsgi_app.application, report_only)
+    app = guard.ContentSecurityPolicy(wsgi_app.application, report_only=True)
