@@ -29,8 +29,7 @@ class ContentSecurityPolicy(object):
         "default-src": ["self"],
     }
 
-    def __init__(self, application, policy=None, report_uri=None,
-                 report_only=False):
+    def __init__(self, application, policy=None, report_only=False):
         self.application = application
 
         # Merge the provided policy with the default policy
