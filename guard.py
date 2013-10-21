@@ -39,7 +39,7 @@ class ContentSecurityPolicy(object):
         # Turn into a policy dictionary into a policy string
         directives = [
             [name] + values
-            for name, values in merged_policy.items()
+            for name, values in sorted(list(merged_policy.items()))
         ]
         self.policy = "; ".join(" ".join(d) for d in directives)
 
